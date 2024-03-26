@@ -155,7 +155,7 @@ class GoogleAutoComplete extends Component {
             this.findCoords(data);
           }}
           query={{
-            key: "AIzaSyCVL8XPE648mXnp9IVtxHp33Mu9TDG812o",
+            key: "",
             language: "en",
           }}
         />
