@@ -1,0 +1,35 @@
+{
+  "cli": {
+    "version": ">=3.5.1"
+  },
+  "build": {
+    "development": {
+      "distribution": "internal",
+      "android": {
+        "gradleCommand": ":app:assembleDebug"
+      },
+      "ios": {
+        "buildConfiguration": "Debug"
+      }
+    },
+    "preview": {
+      "distribution": "internal"
+    },
+    "production": {
+      "ios":{
+        "autoIncrement": "version"  ,
+        "resourceClass": "m1-medium",
+        "image": "macos-monterey-12.6-xcode-14.1"
+      },
+      "android": {
+        "autoIncrement": false,
+        "resourceClass": "medium",
+        "image": "ubuntu-22.04-jdk-11-ndk-r21e"
+    }
+
+    }
+  },
+  "submit": {
+    "production": {}
+  }
+}

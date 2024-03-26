@@ -1,0 +1,71 @@
+{
+  "expo": {
+    "name": "Apera",
+    "slug": "Apera",
+    "scheme": "apera",
+    "version": "1.0.16",
+    "orientation": "portrait",
+    "icon": "./assets/ic_launcher.png",
+    "splash": {
+      "image": "./assets/apera-logo.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.apera.aperaapplication",
+      "infoPlist": {
+        "NSPhotoLibraryUsageDescription": "This app accesses your photo library in order to upload your profile picture",
+        "NSLocationWhenInUseUsageDescription": "Apera would like to access  your location so that we can provide  you with gigs near your location accurately",
+        "NSCameraUsageDescription": "This app accesses your camera to take a photo of your profile picture",
+        "NSMicrophoneUsageDescription": "This app accesses your microphone to record a voice message",
+        "NSPhotoLibraryAddUsageDescription": "This app accesses your photo library to save your photos",
+        "NSLocationAlwaysUsageDescription": "This app accesses your location so that we can provide you with the best experience possible",
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "This app accesses your location so that we can provide you with the best experience possible",
+        "UIBackgroundModes": [
+          "location",
+          "fetch"
+        ]
+      },
+      "config": {
+        "googleMapsApiKey": "AIzaSyArFy_WJvy_aXbm31_343Kb6dIWW1fRcyo",
+        "googleSignIn": {
+          "reservedClientId": "com.googleusercontent.apps.902398275906-q333brre9ru82j8gt65nutjk7gb61n07"
+        }
+      },
+      "buildNumber": "4"
+    },
+    "android": {
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyCVL8XPE648mXnp9IVtxHp33Mu9TDG812o"
+        }
+      },
+      "targetSdkVersion": 33,
+      "package": "com.apera.aperaapplication",
+      "versionCode": 3
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "@stripe/stripe-react-native",
+        {
+          "enableGooglePay": true
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "5c0be4cb-b10f-488e-a87d-70d2ecd54732"
+      }
+    }
+  }
+}
